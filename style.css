@@ -1,6 +1,8 @@
 * {
     padding: 0;
     margin: 0;
+    font-family: 'Lato', sans-serif;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .header {
@@ -341,6 +343,89 @@
     border-color: #F948B2;
 }
 
+.footer {
+
+    width: 100%;
+    background: #0B0223;
+
+    padding: 40px 240px;
+    min-height: 50px;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.footer-div {
+    width: 40%;
+    margin: 0 auto;
+
+}
+
+.footer-title {
+    color: #FFF;
+}
+
+.div-1 {
+    color: #FFF;
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: 30px;
+    padding: 10px;
+
+
+
+
+}
+
+.div-2 {
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 10px;
+    font-size: 15px;
+
+}
+
+.div-3 {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: larger;
+    padding: 50px;
+    font-size: 300px;
+
+
+}
+
+.div-4 {
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 10px;
+    font-size: 15px;
+
+
+
+}
+
+.fotter-icon {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border: none;
+}
+
+.footer-last-line {
+    color: white;
+    text-align: center;
+    padding-top: 30px;
+}
+
+
 /* ------------------------------------------------------------------------------------- */
 
 /* view */
@@ -360,14 +445,16 @@
 }
 
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 426px) {
 
     .header,
     .header-page,
     .header-div-2,
     .online-games,
     .online-games-container,
-    .play-games,.button-page {
+    .play-games,
+    .button-page,
+    .footer {
         flex-direction: column;
         padding: 20px 20px;
         align-items: center;
@@ -494,20 +581,48 @@
         left: -70px;
         border: none;
     }
-    .button-page{
+
+    .button-page {
         width: 90%;
         margin-right: 20px;
         display: flex;
-        
+
     }
-    .button-page-btn-1{
+
+    .button-page-btn-1 {
         width: 100%;
         gap: 10px;
     }
-    
-    
-    
-        
+
+    .div-1 {
+        display: flex;
+    }
+
+    .div-2 {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .div-3 {
+        gap: 10px;
+    }
+
+    .div-4 {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .fotter-icon {
+        padding: 10px;
+        align-content: center;
+        justify-content: center;
+    }
+
+
+
+
 
 
 }
