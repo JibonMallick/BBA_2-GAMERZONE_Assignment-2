@@ -122,8 +122,7 @@
     line-height: normal;
     text-transform: lowercase;
     display: flex;
-    text-align: center;
-    align-items: center;
+    
     justify-content: center;
 }
 
@@ -208,6 +207,9 @@
     align-items: center;
     justify-content: center;
     font-size: 20px;
+    /* hover */
+
+    position: relative;
 }
 
 .online-game-title-style {
@@ -228,7 +230,33 @@
 
 .online-games-containt-img {
     width: 100%;
+
+    
 }
+/* hover */
+.hover-containt{
+    width: 100%;
+    height: 80%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    background:rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    opacity: 0;
+    transition: 0.6s;
+    border-radius: 10px;
+}
+.hover-containt:hover{
+    opacity: 1;
+}
+
+
+
+
+/* hover */
 
 .play-games {
     width: 100%;
@@ -442,7 +470,80 @@
         text-align: center;
 
     }
+    .header-page-left {
+        width: 100%;
+    }
+    .header-page-txt {
+
+
+        font-size: 25px;
+        font-style: normal;
+        line-height: normal;
+        text-transform: lowercase;
+        display: flex;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+    .header-page-title-2 {
+        text-align: center;
+        font-size: 30px;
+        font-style: normal;
+        line-height: normal;
+        text-transform: uppercase;
+        background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    .header-image {
+        width: 100%;
+        display: flex;
+        align-items: center;
+    }
+
+    .header-page-title {
+        color: #0B0223;
+        text-align: center;
+        font-size: 15px;
+        font-style: normal;
+        line-height: normal;
+        text-transform: uppercase;
+    }
+
+    .header-page-txt {
+        font-size: 10px;
+        font-style: normal;
+        line-height: normal;
+        text-transform: lowercase;
+        display: flex;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .btn-1,
+    .btn-2,
+    .header-page-button-div {
+        display: inline-flex;
+        padding: 5px 10px;
+        align-items: flex-start;
+        gap: 10px;
+        border-radius: 20px;
+        background: var(linear-gradient(90deg, #FF42A5 0%, #FF42A5 100%));
+        border: none;
+        color: #FFF;
+        font-family: Work Sans;
+        font-size: 5px;
+        font-style: normal;
+
+        line-height: normal;
+        text-transform: uppercase;
+    }
 }
+
+
+/*........................... large mobile scene..................................... */
 
 
 @media screen and (max-width: 426px) {
